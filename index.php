@@ -9,7 +9,9 @@
 
  </head>
  <body>
+  <center>
  <?php echo "<p>123 testando</p>"; ?>
+  </center>
  <br>
  <div style="float:right">
    <select id="cliente">
@@ -20,8 +22,8 @@
  </div>
 
 <br>
-
-<input id="produtp" type="text" placeholder="Produto"></input>
-
+<center>
+<input id="produto" type="text" placeholder="Produto"></input>
+</center>
  </body>
 </html>
