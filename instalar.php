@@ -12,8 +12,6 @@
   <?php
   include 'config.php';
   //testar banco de dados
-
-  //Criar Banco
   echo 'Verificando banco de dados ';
   try {
   $db = new PDO('mysql:host='.$host, $usuario, $senha, $options);
@@ -25,7 +23,7 @@
   echo '<br>Úsuario: '.$usuario;
   echo '<br>Verifique também sua senha!';
   }
-
+  //Criar Banco
   $banco = "`".str_replace("`","``",$banco)."`";
   echo $banco.' ... ';
   $db->query("CREATE DATABASE IF NOT EXISTS $banco");
