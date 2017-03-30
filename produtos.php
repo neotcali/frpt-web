@@ -33,6 +33,7 @@ if(preg_match("/[^\040\pL\pN_-]/u", $term)) {
 // *****************************************************************************
 
 /*aqui tem que trocar o json da api pelo sql do banco*/
+$url='http://2013-2016.indicadores.cidadessustentaveis.org.br/';
 $unparsed_json = file_get_contents($url.'/indicators');
 $json_object = json_decode($unparsed_json);
 foreach($json_object->indicators as $entry) {
